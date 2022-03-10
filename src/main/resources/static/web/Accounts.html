@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords"
+    content="​Join Accenture’s virtual program for new perspectives, ​Technology Of The Future, 01, 02, 03, 04, ​AI &amp;amp; Digital Platform, ​Essential 8 Emerging Technologies, ​Technology Of The Future, Join our newsletter">
+  <meta name="description" content="">
+  <meta name="page_type" content="np-template-header-footer-from-plugin">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="../web/css/nicepage.css" media="screen">
+  <link rel="stylesheet" href="../web/css/Accounts.css" media="screen">
+  <script class="u-script" type="text/javascript" src="../web/js/jquery.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="../web/js/nicepage.js" defer=""></script>
+  <meta name="generator" content="Nicepage 4.3.3, nicepage.com">
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+  <meta name="theme-color" content="#478ac9">
+  <meta property="og:title" content="Accounts">
+  <meta property="og:type" content="website">
+  <title>Accounts</title>
+</head>
+
+<body class="u-body">
+  <header class="u-align-center-sm u-align-center-xs u-clearfix u-header u-sticky u-sticky-68ca u-white u-header"
+    id="sec-2af1" data-animation-name="" data-animation-duration="0" data-animation-delay="0"
+    data-animation-direction="">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="685" data-image-height="702">
+        <img src="images/0239ce94-f0b2-dad5-8de2-a25568e2fcaa.png" class="u-logo-image u-logo-image-1">
+      </a>
+      <nav class="u-align-left u-menu u-menu-dropdown u-offcanvas u-menu-1">
+        <div class="menu-collapse" style="font-size: 1rem;">
+          <a class="u-button-style u-nav-link" href="#">
+            <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 302 302">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8a8f"></use>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+              id="svg-8a8f" x="0px" y="0px" viewBox="0 0 302 302" style="enable-background:new 0 0 302 302;"
+              xml:space="preserve" class="u-svg-content">
+              <g>
+                <rect y="36" width="302" height="30"></rect>
+                <rect y="236" width="302" height="30"></rect>
+                <rect y="136" width="302" height="30"></rect>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="u-custom-menu u-nav-container">
+          <ul class="u-nav u-unstyled u-nav-1">
+            <li class="u-nav-item"><a
+                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                href="Home.html" style="padding: 22px 66px;">Home</a>
+            </li>
+            <li class="u-nav-item"><a
+                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                href="About-Us.html" style="padding: 22px 66px;">About Us</a>
+            </li>
+            <li class="u-nav-item"><a
+                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                href="Contact.html" style="padding: 22px 66px;">Contact</a>
+            </li>
+            <li class="u-nav-item"><a
+                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                href="LogIn.html" style="padding: 22px 66px;">Account</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <style class="u-sticky-style" data-style-id="68ca">
+      .u-sticky-fixed.u-sticky-68ca,
+      .u-body.u-sticky-fixed .u-sticky-68ca {
+        box-shadow: 0 -2px 8px 0 rgba(128, 128, 128, 1) !important
+      }
+    </style>
+  </header>
+  <div id="app">
+    <section class="contenidoAccount">
+      <table class="">
+        <thead>
+          <tr>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{client.firstName}}</td>
+            <td>{{client.lastName}}</td>
+            <td>{{client.email}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="row.d-flex flex-row">
+        <h2>Your Accounts:</h2>
+        <div class="col-12 col-wd-6 col-lg-6 col-xl-6">
+          <div class="card-cuenta">
+            <ul class="list-group list-group-flush" v-for="account in accounts">
+              <li class="list-group-item">Account:{{account.number}}</li>
+              <li class="list-group-item bg-sucess">Type:{{account.accountType}}</li>
+              <li class="list-group-item bg-sucess">Balance:{{account.balance}}</li>
+              <li class="list-group-item">Creation Date:{{account.creationDate}}</li>
+              <button class="button" v-on:click="getTransaction(account.id)"> Transactions</button>
+
+              <button class="boton" @click="deleteAccounts(account.id)">Delete Account</button>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- getTransaction -->
+        
+        <table class="tabla">
+          <h2>Your Transactions:</h2>
+          <tr>
+            <th>Type:</th>
+            <th>Ammount:</th>
+            <th>Description:</th>
+            <th>Date:</th>
+          </tr>
+          <tr v-for="transactions in transactions">
+            <td>{{transactions.type}}</td>
+            <td>{{transactions.ammount}}</td>
+            <td>{{transactions.description}}</td>
+            <td>{{transactions.date}}</td>
+          </tr>
+          
+        </table>
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"v-show="account < 3">
+          Create NEW Account
+        </button>
+      
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Nueva cuenta</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Seleccione el tipo de cuenta que desea crear:
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" @click="getAccounts('CURRENT')" data-bs-dismiss="modal">Current Account</button>
+                <button type="button" class="btn btn-primary" @click="getAccounts('SAVING')">Saving Account</button>
+              </div>
+            </div>
+          </div>
+        <!-- <button class="button" @click="getAccounts()" v-show="account < 3">New ACCOUNT</button> -->
+      </div>
+    </section>
+  </div>
+  <div class="barra de carga">
+    <div class="loader loader--active">
+      <div class="loader__icon"><svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40"
+          enable-background="new 0 0 40 40" xml:space="preserve">
+          <path opacity="0.2" fill="#000"
+            d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z">
+          </path>
+          <path fill="#000"
+            d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0C22.32,8.481,24.301,9.057,26.013,10.047z">
+          </path>
+          <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20"
+            dur="0.5s" repeatCount="indefinite"></animateTransform>
+        </svg></div>
+      <div class="loader__tile"></div>
+      <div class="loader__tile"></div>
+      <div class="loader__tile"></div>
+      <div class="loader__tile"></div>
+      <div class="loader__tile"></div>
+    </div>
+    <style>
+      body {
+        background-color: #eee;
+      }
+
+      .wrapper {
+        height: 100vh;
+        text-align: center;
+      }
+
+      .wrapper button {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .loader {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100vh;
+        transition: width 0s 1.4s ease;
+      }
+
+      .loader .loader__icon {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+      }
+
+      .loader .loader__icon svg {
+        transform-origin: 0 0;
+      }
+
+      .loader .loader__tile {
+        position: absolute;
+        left: 0;
+        width: 0;
+        height: 20%;
+        background-color: #007AE5;
+        transition: width 0.7s ease;
+      }
+
+      .loader .loader__tile:nth-child(0) {
+        top: calc(-1 * 20%);
+        transition-delay: -0.2s;
+      }
+
+      .loader .loader__tile:nth-child(1) {
+        top: calc(0 * 20%);
+        transition-delay: 0s;
+      }
+
+      .loader .loader__tile:nth-child(2) {
+        top: calc(1 * 20%);
+        transition-delay: 0.2s;
+      }
+
+      .loader .loader__tile:nth-child(3) {
+        top: calc(2 * 20%);
+        transition-delay: 0.4s;
+      }
+
+      .loader .loader__tile:nth-child(4) {
+        top: calc(3 * 20%);
+        transition-delay: 0.6s;
+      }
+
+      .loader .loader__tile:nth-child(5) {
+        top: calc(4 * 20%);
+        transition-delay: 0.8s;
+      }
+
+      .loader--active {
+        width: 100%;
+        transition-delay: 0s;
+      }
+
+      .loader--active .loader__icon {
+        opacity: 1;
+        transition: opacity 0.5s 1.4s ease;
+      }
+
+      .loader--active .loader__tile {
+        width: 100%;
+      }
+
+      .loader--active .loader__tile:nth-child(0) {
+        transition-delay: -0.2s;
+      }
+
+      .loader--active .loader__tile:nth-child(1) {
+        transition-delay: 0s;
+      }
+
+      .loader--active .loader__tile:nth-child(2) {
+        transition-delay: 0.2s;
+      }
+
+      .loader--active .loader__tile:nth-child(3) {
+        transition-delay: 0.4s;
+      }
+
+      .loader--active .loader__tile:nth-child(4) {
+        transition-delay: 0.6s;
+      }
+
+      .loader--active .loader__tile:nth-child(5) {
+        transition-delay: 0.8s;
+      }
+    </style>
+
+    <div class="loading show">
+      <div class="spin"></div>
+    </div>
+
+    <script>
+
+      var $loader = document.querySelector('.loader')
+
+      window.onload = function () {
+        $loader.classList.remove('loader--active')
+      };
+
+      document.querySelector('.btn').addEventListener('click', function () {
+        $loader.classList.add('loader--active')
+
+        window.setTimeout(function () {
+          $loader.classList.remove('loader--active')
+        }, 5000)
+      })
+    </script>
+  </div>
+  <footer class="u-clearfix u-footer u-grey-80" id="sec-028d">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <div class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
+        <div class="u-gutter-0 u-layout">
+          <div class="u-layout-row">
+            <div
+              class="u-align-center-sm u-align-center-xs u-align-left-md u-align-left-xl u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1">
+              <div class="u-container-layout u-valign-middle u-container-layout-1">
+                <!--position-->
+                <div data-position="" class="u-position u-position-1">
+                  <!--block-->
+                  <div class="u-block">
+                    <div class="u-block-container u-clearfix">
+                      <!--block_header-->
+                      <h5 class="u-block-header u-text">
+                        <!--block_header_content-->Pagina hecha por Meza Daiana
+                        <!--/block_header_content-->
+                      </h5>
+                      <!--/block_header-->
+                      <!--block_content-->
+                      <div class="u-block-content u-text">
+                        <!--block_content_content-->
+                        <!--/block_content_content-->
+                      </div>
+                      <!--/block_content-->
+                    </div>
+                  </div>
+                  <!--/block-->
+                </div>
+                <!--/position-->
+              </div>
+            </div>
+            <div class="u-align-center-sm u-align-right-md u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+              <div class="u-container-layout u-container-layout-2">
+                <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="685"
+                  data-image-height="702">
+                  <img src="images/0239ce94-f0b2-dad5-8de2-a25568e2fcaa.png" class="u-logo-image u-logo-image-1">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="./js/account.js"></script>
+
+</body>
+
+</html>
