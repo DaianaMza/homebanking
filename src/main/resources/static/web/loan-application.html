@@ -90,15 +90,16 @@
           <option vfor="">Auto</option>
         </select>
       </p>
-      <p>
-        Payments:
+
+
+      <p> Payments:
         <select name="type" v-model="payments">
           <option>Select Payments</option>
-          <option v-for="account in payments">
-            {{account}}
+          <option v-for="payment in payments">
+            {{payment}}
           </option>
-        </select>
-      </p>
+        </select> </p>
+
       <p>
       Ammount:
       <input type="number">

@@ -6,13 +6,14 @@ let app = new Vue({
     hipotecario: [],
     personal: [],
     auto: [],
-    ammount: "",
-    payments: "",
+    ammount: 0,
+    payments: [],
     destinyAccount: ""
   },
   created() {
     this.cargarLoan()
-    this.cargarCuentas()},
+    this.cargarCuentas()
+    },
   methods: {
     cargarLoan() {
       console.log("loan created");
@@ -21,15 +22,16 @@ let app = new Vue({
           this.hipotecario = response.data[0]
           this.personal = response.data[1]
           this.auto = response.data[2]
-          console.log(this.hipotecario);
-          console.log(this.personal);
-          console.log(this.auto);
-          console.log(response.data);
+//          console.log(this.hipotecario);
+//          console.log(this.personal);
+//          console.log(this.auto);
+//          console.log(response.data);
           this.loan = response.data
         })
         .catch((error) => {
           console.log(error); //imprimir error si no funka
         })},
+
     cargarCuentas() {
       axios.get(`http://localhost:8080/api/clients/current`)
       .then( response=>{

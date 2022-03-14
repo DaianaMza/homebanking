@@ -44,15 +44,14 @@
           <div class="form">
             <input type="text" id="signupUsername" class="form-field animation a3" placeholder="Username"
             v-model="firstName">
-        <div class="form__input-error-message"></div>
-        
-            <input type="password" class="form-field animation a4" placeholder="Password">
-            <input type="password" class="form-field animation a4" placeholder="Password">
-            <input type="password" class="form-field animation a4" placeholder="Password">
+              <input type="text" id="signupLastname" class="form-field animation a3" placeholder="LastName"
+                     v-model="lastName">
+        <input type="text" class="form-field animation a3" autofocus placeholder="Email Address" v-model="email">
+        <input type="password" class="form-field animation a3"autofocus placeholder="Password" v-model="password">
             <p class="form__text">
               <a class="form__link" id="linkLogin" @click="ocultar=false">Already have an account? Sign in</a>
           </p>
-            <button class="animation a6" @click="createAccount()">LOGIN</button>
+            <button type="submit" class="animation a6" @click="createAccount()">LOGIN</button>
           </div>
         </div>
       </form>
